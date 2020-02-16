@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MariaDbAPI.Models
 {
-    public class StorageSettings
+    public class DatabaseSettings
     {
         public string Connection { get; set; }
     }

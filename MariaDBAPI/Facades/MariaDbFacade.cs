@@ -12,9 +12,9 @@ namespace MariaDbAPI.Facades
     public class MariaDbFacade : IMariaDbFacade
     {
 
-        private readonly StorageSettings _settings;
+        private readonly DatabaseSettings _settings;
 
-        public MariaDbFacade(IOptions<StorageSettings> settings)
+        public MariaDbFacade(IOptions<DatabaseSettings> settings)
         {
             _settings = settings.Value;
         }

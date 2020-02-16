@@ -18,13 +18,7 @@ namespace MariaDBAPI
 {
     public class Startup
     {
-        /*
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-        */
-
+        
         public Startup(IWebHostEnvironment env)
         {
             var builder = new ConfigurationBuilder()
@@ -41,7 +35,7 @@ namespace MariaDBAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<StorageSettings>(Configuration.GetSection("StorageSettings"));
+            services.Configure<DatabaseSettings>(Configuration.GetSection("DatabaseSettings"));
             services.AddScoped<IMariaDbFacade, MariaDbFacade>();
             services.AddControllers();
             services.AddApplicationInsightsTelemetry();
