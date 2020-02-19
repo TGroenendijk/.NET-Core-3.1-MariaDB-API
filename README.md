@@ -13,4 +13,4 @@ To create an Azure Database for MariaDB server:
 2.	Select Databases > Azure Database for MariaDB. 
 
 Enter or select the following server details:
-![Create MariaDB server](https://user-images.githubusercontent.com/4686866/74847337-3de35400-5332-11ea-8462-8562ff4ad4a5.png | width=320)
+![Create MariaDB server](https://user-images.githubusercontent.com/4686866/74847337-3de35400-5332-11ea-8462-8562ff4ad4a5.png  {width=320px})
